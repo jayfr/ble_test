@@ -1,12 +1,14 @@
 var bluetoothSerial = cordova.require('bluetoothSerial');
-var cmd = 0x00;
 
-var Left = 0x08;
-var Right = 0x04;
-var Forward = 0x02;
-var Backward = 0x01;
+var cmd = 0;
+
+var vLeft = 8;
+var vRight = 4;
+var vForward = 2;
+var vBackward = 1;
 
 function reset() {
+
 }
 
 
@@ -19,38 +21,39 @@ function disconnect() {
 }
 
 function send() {
+  console.log(cmd);
   bluetoothSerial.write(cmd);
 }
 
 function forward(s) {
   if (s)
-    cmd |= Forward;
+    cmd |= vForward;
   else
-    cmd &= ~Forward;
+    cmd &= ~vForward;
   send();
 }
 
 function backward(s) {
   if (s)
-    cmd |= Backward;
+    cmd |= vBackward;
   else
-    cmd &= ~Backward;
+    cmd &= ~vBackward;
   send();
 }
 
 function left(s) {
   if (s)
-    cmd |= left;
+    cmd |= vLeft;
   else
-    cmd &= ~left;
+    cmd &= ~vLeft;
   send();
 }
 
 function right(s) {
   if (s)
-    cmd |= Right;
+    cmd |= vRight;
   else
-    cmd &= ~Right;
+    cmd &= ~vRight;
   send();
 }
 
