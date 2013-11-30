@@ -11,8 +11,11 @@
     <script src="js/ble_test.js"></script>
 </head>
 <body>
-    <input type="button" onclick="connect();" value="Connect" />
-    <input type="button" onclick="disconnect();" value="Disconnect" />
-    <input type="button" onclick="foo();" value="Foo" />
+    <input type="button" ontouchstart="connect();" value="Connect" />
+    <input type="button" ontouchstart="disconnect();" value="Disconnect" />
+    <input type="button" ontouchstart="forward(true);" ontouchstart="forward(false);" value="F" />
+    <input type="button" ontouchstart="backward(true);" ontouchstart="backward(false);"value="B" />
+    <input type="button" ontouchstart="left(true);" ontouchstart="left(false);" value="L" />
+    <input type="button" ontouchstart="right(true);" ontouchstart="right(false);" value="R" />
 </body>
 </html>
