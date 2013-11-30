@@ -7,14 +7,14 @@
         id        = "com.phonegap.hello-world"
         version   = "1.0.0">
 
-    <name>Robohive</name>
+    <name>ble_test</name>
 
     <description>
-        Robohive Client Description
+        Test BLE app
     </description>
 
     <author href="http://www.reactivetechnologies.com" email="support@reactivetechnologies.com">
-        Robohive Temp Team
+        My Team
     </author>
 
     <!--
@@ -52,6 +52,7 @@
         <gap:plugin name="Example" />
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
     -->
+    <gap:plugin name="com.megster.cordova.bluetoothserial" />
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
