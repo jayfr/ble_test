@@ -11,3 +11,7 @@ function connect() {
 function disconnect() {
   bluetoothSerial.disconnect(function (){ alert('Success');}, function() { alert('Fail');});
 }
+
+function foo() {
+  bluetoothSerial.write('Foo');
+}
