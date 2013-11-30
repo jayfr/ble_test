@@ -21,8 +21,8 @@ function disconnect() {
 }
 
 function send() {
-  console.log(cmd);
-  bluetoothSerial.write(cmd);
+  console.log(cmd.toString(16));
+  bluetoothSerial.write(cmd.toString(16));
 }
 
 function forward(s) {
