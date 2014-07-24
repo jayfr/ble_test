@@ -1,16 +1,10 @@
 var bluetoothSerial = cordova.require('bluetoothSerial');
 
-console.log("-1-");
 var cmd = 0;
-console.log("-2-");
 var vLeft = 8;
-console.log("-3-");
 var vRight = 4;
-console.log("-4-");
 var vForward = 2;
-console.log("-5-");
 var vBackward = 1;
-console.log("-6-");
 
 function reset() {
 
@@ -36,10 +30,12 @@ function forward(s) {
   console.log("#2");
   console.log(vForward);
   console.log("#3");
-  if (s)
+  if (s) {
     cmd |= vForward;
-  else
+  }
+  else {
     cmd &= ~vForward;
+  }
   send();
 }
 
