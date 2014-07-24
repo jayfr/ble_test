@@ -1,11 +1,11 @@
-var bluetoothSerial = cordova.require('bluetoothSerial');
-
 var cmd = 0;
-//var vLeft = 8;
-//var vRight = 4;
-//var vForward = 2;
-//var vBackward = 1;
+var vLeft = 8;
+var vRight = 4;
+var vForward = 2;
+var vBackward = 1;
 var foo = 100;
+
+var bluetoothSerial = cordova.require('bluetoothSerial');
 
 function reset() {
 
