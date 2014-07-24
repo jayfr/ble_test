@@ -26,6 +26,8 @@ function send() {
 }
 
 function forward(s) {
+  console.log(s);
+  console.log(vForward);
   if (s)
     cmd |= vForward;
   else
