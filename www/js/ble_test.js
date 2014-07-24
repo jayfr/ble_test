@@ -5,6 +5,7 @@ var vLeft = 8;
 var vRight = 4;
 var vForward = 2;
 var vBackward = 1;
+var foo = 100;
 
 function reset() {
 
@@ -28,8 +29,10 @@ function forward(s) {
   console.log("#1");
   console.log(s);
   console.log("#2");
-  console.log(vForward);
+  console.log(foo);
   console.log("#3");
+  console.log(vForward);
+  console.log("#4");
   if (s) {
     cmd |= vForward;
   }
