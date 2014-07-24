@@ -1,3 +1,7 @@
+.Button {
+  -webkit-user-select: none;
+}
+
 .SettingButton {
   position: absolute;
   height: 25%;
